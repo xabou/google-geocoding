@@ -1,0 +1,21 @@
+{
+    "name": "xabou/google-geocoding",
+    "description": "Google Geocoding API integration for Laravel",
+  "keywords": ["laravel", "geocoder", "google", "geocoding"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xabou",
+            "email": "bouzopoulos@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^5.3",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "autoload": {
+      "psr-4": {
+        "Xabou\\Geocoding\\": "src/"
+      }
+    }
+}

@@ -17,15 +17,6 @@ Xabou\Geocoding\GeocodingServiceProvider::class
 ```
 ## Usage
 
-#### Api Key
-In order to start using Google Geocoding API you must obtain first an 
-[API key](https://developers.google.com/maps/documentation/geocoding/start#api_key).  
-After getting your key just add it to your .env file
-
-```
-GOOGLE_GEOCODING_API_KEY=PutYourKeyHere
-```
-
 #### Singleton
 Geocoder is register as singleton in Laravel's Service Container making it easy to call it  
 anywhere within your application. Simply 'make' Geocoder with app helper method.
@@ -59,8 +50,11 @@ More about available parameters you can find at
 
 ## Configuration
 
-If you need to change some of the default configuration, you can publish the configuration file and make  
-any changes you need:
+#### Api Key
+In order to start using Google Geocoding API you must obtain first an 
+[API key](https://developers.google.com/maps/documentation/geocoding/start#api_key).  
+After getting your API key publish Geocoder's configuration file and make necessary changes.
+
 ```
 php artisan vendor:publish --tag=geocoding-config
 ```
@@ -80,7 +74,7 @@ return [
    |
    */
 
-    'api_key' => env('GOOGLE_GEOCODING_API_KEY'),
+    'api_key' => '',
 
     /*
     |--------------------------------------------------------------------------

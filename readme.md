@@ -30,13 +30,13 @@ GOOGLE_GEOCODING_API_KEY=PutYourKeyHere
 Geocoder is register as singleton in Laravel's Service Container making it easy to call it  
 anywhere within your application. Simply 'make' Geocoder with app helper method.
 
-```
+```php
 app('Geocoder')
 ```
 
 #### Fluent API
 Geocoder provides a fluent API for every available parameter in geocoding request.
-```
+```php
 app('Geocoder')->address('stadiou 14')
                ->language('el')
                ->region('gr')
@@ -44,7 +44,7 @@ app('Geocoder')->address('stadiou 14')
 ```
 
 You can also pass an array of parameters
-```
+```php
 app('Geocoder')->parameters([
                   'address'  => 'stadiou 14'
                   'language' => 'el'

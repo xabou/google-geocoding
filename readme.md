@@ -1,3 +1,8 @@
+# Abandoned
+
+All good things come to an end. 
+Thanks everyone for using this package :)  
+
 # Laravel Geocoder
 This package provides a wrapper around Google Geocoding API for your Laravel application. 
 
@@ -103,6 +108,6 @@ return [
     'output_format' => 'json',
 ];
 ```
-##License
+## License
 
 This package is released under the MIT License.
